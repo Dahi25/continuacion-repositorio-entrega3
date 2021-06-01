@@ -1,0 +1,26 @@
+{{>header}}
+<p> Señor usuario registrese para brindarle una mejor experiencia de Usuario</p>
+
+<form action="/registrarestudiantes" method="post">
+ <div class="col-md-6">
+    <label for="cedula" class="form-label">Cedula</label>
+    <input type="number" class="form-control" id="cedula"name="cedula">
+  </div>
+  <div class="col-md-6">
+    <label for="nombre" class="form-label">Nombre</label>
+    <input type="text" class="form-control" id="nombre" placeholder=""name="nombre" >
+  </div>
+  <div class="col-md-6">
+    <label for="inputEmail4" class="form-label">Correo electrónico</label>
+    <input type="email" class="form-control" id="correo" name="correo" >
+  </div>
+  <div class="col-12">
+    <label for="telefono" class="form-label">Telefono</label>
+    <input type="number" class="form-control" id="telefono" placeholder=""name="telefono">
+  </div>
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary">Sign in</button>
+  </div>
+</form>
+{{registarestudiantes}}
+{{>footer}}

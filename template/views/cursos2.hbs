@@ -1,0 +1,35 @@
+
+{{>header}}
+<h1> Lista de cursos</h1>
+{{{verCursos}}}
+<form action="/cursos2" method="post">
+<h2>Registrar curso</h2>
+<label for="id">Id</label>
+<input type="text" name="idCurso">
+
+<label for="nombre">Nombre</label>
+<input type="text" name="nombre">
+
+<label for="duracion">Duración</label>
+<input type="text" name="duracion">
+
+<label for="precio">Precio</label>
+<input type="text" name="precio">
+
+<select name="modalidad" id="modalidad">
+	<option value="Presencial">Presencial</option>
+	<option value="Virtual">Virtual</option>
+</select>
+
+<select name="inth" id="inth">
+	<option value="7 Horas">7 Horas</option>
+	<option value="5 Horas">5 Horas</option>
+	<option value="6 Horas">6 Horas</option>
+</select>
+<label for="intens">Descripción</label>
+<input type="text" name="descripcion"> 
+<input type="submit">
+</form>
+	
+	{{{crear_Curso idCu nombreCu duracionCu precioCu modalidadCu intensidadh descrip}}}
+	{{>footer}}

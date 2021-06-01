@@ -1,0 +1,117 @@
+
+
+{{>header}}
+<h1> Bienvenidos a los cursos de educacion continua TdeA </h1> 
+<!---<p> Señor usuario registrese para brindarle una mejor experiencia de Usuario</p>
+
+<form action="/registarestudiantes" method="post">
+ <div class="col-md-6">
+    <label for="cedula" class="form-label">Cedula</label>
+    <input type="number" class="form-control" id="cedula">
+  </div>
+  <div class="col-md-6">
+    <label for="nombre" class="form-label">Nombre</label>
+    <input type="text" class="form-control" id="nombre" placeholder="nombre">
+  </div>
+  <div class="col-md-6">
+    <label for="inputEmail4" class="form-label">Correo electrónico</label>
+    <input type="email" class="form-control" id="correo" >
+  </div>
+  <div class="col-12">
+    <label for="telefono" class="form-label">Telefono</label>
+    <input type="number" class="form-control" id="telefono" placeholder="Telefono">
+  </div>
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary">Sign in</button>
+  </div>
+</form>
+!--->
+
+  <h1> Elige un curso y matriculate </h1>
+  <form action="/matricular" method="post">
+
+    <div class="row">
+     
+        
+    <div class="col-sm">
+       <label > Cedula</label>
+     <input type="number" name="Cedula">
+      </div>
+    <div class="col-sm">
+      <label > nombre del estudiante </label>
+       <input type="text" name="nombreEstudiante">
+    </div>    
+    <div class="col-sm">
+      <label >  correo del estudiante  </label>
+       <input type="email" name="email">
+    </div> 
+     <div class="col-sm">
+      <label >  id curso al que desea matricularse  </label>
+       <input type="number" name="idCurso">
+    </div> 
+  </div>  
+  <br>	
+  <div>
+    <select class="form-select form-select-lg mb-3" style="height:58px;" aria-label=".form-select-lg example" name="modalidad">
+   <option>Modalidad</option>
+   <option value="presencial">Presencial</option>
+   <option value="virtual">Virtual</option>
+   </select>
+  </div>
+  
+<select class="form-select form-select-lg mb-3" style="height:58px;" aria-label=".form-select-lg example" name="intensidad_horaria">
+   <option>intensidad horaria</option>
+   <option value="7hrs">7 hrs</option>
+   <option value="7hrs">6hrs</option>
+   <option value="7hrs">5hrs</option>
+   </select>
+   
+   <br>
+   
+<h1> aca puedes ver la descripcion de cada curso</h1>
+<div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        programacion intermedia id1
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Se requiere conocimientos previos</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingTwo">
+      <button class="accordion-button   collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+       Bases de datos no relacionales  id2
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body" >Curso  intermedio
+           </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        javascript
+      </button>
+      
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Curso intermedio.</div>
+    </div>
+  </div>
+</div>
+<select class="form-select form-select-lg mb-3" style="height:58px;" aria-label=".form-select-lg example" name="descripcioncurso">
+   <option>Selecciona la descripcion del curso elegido</option>
+   <option value="Se requiere conocimientos previos">Se requiere conocimientos previos id1</option>
+   <option value="Curso intermedio">Curso intermedio id2</option>
+   <option value="Curso intermedio">Curso intermedio id3</option>
+   </select>
+<input type="submit" class='form-control btn btn-success'>
+</form>
+
+ 
+ {{{verCursos}}}
+ 
+{{>footer}}
